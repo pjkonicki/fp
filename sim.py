@@ -85,7 +85,7 @@ class Sim(object):
 		return balances + [total]
 
 	def run(self, quiet=False):
-		market = Dist(0.1, 0.18)
+		market = Dist(0.07, 0.10)
 		self.model.setup()
 
 		headers = ''.join(['{:>13s}'.format(acct.name) for acct in self.accounts()])
