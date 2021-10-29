@@ -280,5 +280,9 @@ def run_opt():
 	strategy = opt.optimize(strategy, step_size=4, delta=0.1, epsilon=0.001, randomize_factor=0.2)
 	opt.cross_validate(strategy)
 
-run_opt()
+
+if __name__ == '__main__':
+	run_opt()
+
+	print('Done')
 
